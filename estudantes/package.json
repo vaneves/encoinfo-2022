@@ -1,0 +1,18 @@
+{
+  "name": "estudantes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "npx knex migrate:latest --knexfile ./banco/knexfile.js",
+    "seed": "npx knex seed:run --knexfile ./banco/knexfile.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "knex": "^2.3.0",
+    "sqlite3": "^5.1.2"
+  }
+}

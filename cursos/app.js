@@ -20,6 +20,18 @@ app.get('/v1/cursos', (req, res) => {
     })
 })
 
+app.get('/v1/cursos/:id', (req, res) => {
+  db('cursos')
+    .where('id', req.params.id)
+    .first()
+    .then((curso) => {
+      if (curso) {
+        return res.send(curso)
+      }
+      res.status(404).send({erro: 'Curso não encontrado'})
+    })
+})
+
 app.listen(PORTA, () => {
   console.log(`Servidor online na porta ${PORTA}`)
 })

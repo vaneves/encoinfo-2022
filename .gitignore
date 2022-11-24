@@ -1,2 +1,6 @@
 cursos/node_modules/
 cursos/banco/dev.sqlite3
+estudantes/node_modules/
+estudantes/banco/dev.sqlite3
+inscricoes/node_modules/
+inscricoes/dev.sqlite3
